@@ -7,7 +7,9 @@
 	"scripts": {
 		"start": "eleventy --serve --quiet",
 		"editorconfig": "editorconfig-checker",
-		"build": "eleventy && gulp build"
+		"html": "node-w3c-validator -f lint -evH -i templates/*.html",
+		"build": "rm -rf dist && eleventy && gulp build",
+		"markdown": "remark '*.md' --quiet"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
