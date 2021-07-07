@@ -15,3 +15,18 @@ indent_size = 4
 [{*.yml, *.json, *.md}]
 indent_style = space
 indent_size = 2
+
+[**.pyc]
+indent_size = ignore
+indent_style = ignore
+end_of_line = ignore
+trim_trailing_whitespace = false
+insert_final_newline = false
+charset = unset
+
+[**.txt]
+indent_size = ignore
+indent_style = ignore
+insert_final_newline = false
+trim_trailing_whitespace = false
+charset = utf-8
