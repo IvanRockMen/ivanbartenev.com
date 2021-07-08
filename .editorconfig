@@ -30,3 +30,10 @@ indent_style = ignore
 insert_final_newline = false
 trim_trailing_whitespace = false
 charset = utf-8
+
+[static/*]
+indent_size = ignore
+indent_style = ignore
+insert_final_newline = false
+trim_trailing_whitespace = false
+charset = unset
