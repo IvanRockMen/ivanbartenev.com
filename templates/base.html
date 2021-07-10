@@ -6,14 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{% block title %}Title {% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'landing/css/bootstrap.min.css' %}" type="text/css">
 	<link rel="stylesheet" href="{% static 'landing/css/style.css' %}" type="text/css">
 </head>
 	<body>
-		<header>
-			<nav>
-				<a href="" aria-label="Главная страница ссылка">Главная страница</a>
-			</nav>
-		</header>
-		{% block content %} {% endblock %}
+		<div class="container-fluid">
+			{% include 'header.html' %}
+			<main class="container-fluid">
+			{% block content %} {% endblock %}
+			</main>
+			{% include 'footer.html' %}
+		</div>
 	</body>
 </html>

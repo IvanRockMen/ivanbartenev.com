@@ -1,0 +1,16 @@
+<header class="row">
+	<nav >
+		<a href="/" class="col-md-2 px-1">Главная</a>
+		<a href="about" class="col-md-2 px-1">Обо мне</a>
+	</nav>
+	{% if user.is_autorized %}
+	<div class="col-md-5">
+		<img src="" alt="Avatar" srcset="">
+	</div>
+	{% else %}
+	<div>
+		<a href="accounts/login" class="col-md-2">Авторизация</a>
+		<a href="accounts/register" class="col-md-2">Регистрация</a>
+	</div>
+	{% endif %}
+</header>
